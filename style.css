@@ -25,6 +25,7 @@ body {
   }
 
   .articles a {
+    display: block;
     font-weight: bold;
     border: 5px solid white;
     margin: 5px;
@@ -44,6 +45,9 @@ body {
   }
 
   .articles { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 96px;
     color: white;
     text-align: center;
