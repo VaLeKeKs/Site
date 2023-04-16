@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>XML to HTML Transformation</title>
+  </head>
+  <body>
+    <h1>XML to HTML Transformation</h1>
+    <div>
+      <xsl:processing-instruction name="xml">
+        version="1.0" encoding="UTF-8"
+      </xsl:processing-instruction>
+      <xsl:apply-templates select="document('temp.xml')"/>
+    </div>
+    <script>
+      if (window.ActiveXObject || "ActiveXObject" in window) {
+        document.write("Internet Explorer doesn't support XSLT transformation.");
+      }
+    </script>
+  </body>
+</html>

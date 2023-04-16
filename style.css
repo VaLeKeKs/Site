@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #BC987E;
+    color: white;
+  }
+  
+  header {
+    background-color: #4D220E;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+  }
+
+  .background {
+    display: flex;
+    margin: 0;
+    margin-left: 0%;
+    width: 100%;
+    height: 500px;
+  }
+
+  .articles a {
+    font-weight: bold;
+    border: 5px solid white;
+    margin: 5px;
+    border-radius: 30px;
+    padding: 36px;
+    color: white;
+    font-size: 32px;
+    text-decoration: none;   
+    
+  }
+
+  .articles a:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+
+  }
+
+  .articles { 
+    margin-top: 96px;
+    color: white;
+    text-align: center;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    font-size: large;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  section {
+    margin: 40px 0;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    margin-bottom: 10px;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .gallery a img {
+    width: 240px;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #4D220E;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header h1 {
+    font-size: 18px;
+    margin: 0;
+    padding-left: 16px;
+    font-size: 24px;
+  }
+
+  li a {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4D220E;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  
+  li a:hover {
+    background-color: #fff;
+    color: #4D220E;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+  object{
+    width: 100%;
+    height: 500px;
+  }
+
+  
