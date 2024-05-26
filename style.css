@@ -25,23 +25,27 @@ body {
   }
 
   .articles a {
-    display: block;
+    width: 15vw;
+    height: 6vw;
+    display: flex;
     font-weight: bold;
     border: 5px solid white;
-    margin: 5px;
+    margin: 7px;
     border-radius: 30px;
     padding: 36px;
     color: white;
     font-size: 32px;
     text-decoration: none;   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     
   }
 
   .articles a:hover {
-    background-color: white;
-    color: black;
-    transition: 1s;
-
+    transform: scale(1.05);
+    border-width: 1px;
+    transition: 0.4s;
   }
 
   .articles { 
@@ -82,6 +86,7 @@ body {
   
   section {
     margin: 40px 0;
+    font-size: 24px;
   }
   
   h2 {
@@ -151,4 +156,66 @@ body {
     height: 500px;
   }
 
-  
+  .calculator {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+#display {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #eee;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.shine-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #4D220E;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #4D220E;
+  transition: .2s ease-in-out;
+}
+.shine-button:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 100%;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+.shine-button:hover {
+  background: #4D220E;
+  color: #fff;
+}
+.shine-button:hover:before {
+  left: 100%;
+  transition: .5s ease-in-out;
+}

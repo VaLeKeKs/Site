@@ -2,68 +2,103 @@
 <html>
 
 <head>
-    <title>Административные правонарушения</title>
+    <title>Налоговое законодательство стран ЕАЭС</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>Административные правонарушения</h1>
+        <h1>Налоговое законодательство стран ЕАЭС</h1>
         <nav>
             <ul>
                 <li><a href="#about">О нас</a></li>
-                <li><a href="#laws">Статьи</a></li>
-                <li><a href="#penalties">Наказания</a></li>
-                <li><a href="#photos">Библиотека</a></li>
+                <li><a href="#laws">Страны</a></li>
+                <li><a href="#laws">Библиотека</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="about">
             <h2>О нас</h2>
-            <p>На портале «Административные правонарушения в области таможенного дела»размещена справочная информация об административных нарушениях физических и юридических лиц в таможенном деле, в том числе — в электронном виде, организован поиск по тематике, представлены образцы документов, ссылки на сервисы госучреждений и ведомств.</p>
+            <p>На портале «Налоговое законодательство стран ЕАЭС» размещена справочная информация о налогообложении стран Евразийского экономического союза,в том числе — в электронном виде,организован поиск по тематике,предоставлены ссылки на сервисы государственных учреждений и ведомств.</p>
         </section>
     </main>
         
     <div class="background">
-        <img src="img/background.jpg" alt="background" style="width: 960px;">
-        <img src="img/112.jpg" alt="background" style="width: 960px;">
+        <img src="img/flags.jpg" alt="background" style="width: 960px;">
+        <img src="img/eas.jpg" alt="background" style="width: 960px;">
+        <!--<img src="img/112.jpg" alt="background" style="width: 960px;">-->
     </div>
 
     <h2 style="text-align: center; margin-top: 32px;">Статьи</h2>
     <div class="articles" id="laws">
-        <a href="src/15.1.html" target="_blank">15.1</a>
-        <a href="src/15.2.html" target="_blank">15.2</a>
-        <a href="src/15.3.html" target="_blank">15.3</a>
-        <a href="src/15.4.html" target="_blank">15.4</a>
-        <a href="src/15.5.html" target="_blank">15.5</a>
-        <a href="src/15.6.html" target="_blank">15.6</a>
+        <a href="https://armeniya.info/wp-content/uploads/2022/03/nalog-ra.pdf" target="_blank" style="background-image: url('img/armenia.png'); background-size: cover; background-position: center;">Армения</a>
+        <a href="https://pravo.by/document/?guid=3871&p0=hk0200166" target="_blank" style="background-image: url('img/belarus.png'); background-size: cover; background-position: center;">Беларусь</a>
+        <a href="https://zakon.uchet.kz/rus/docs/K1700000120" target="_blank" style="background-image: url('img/kazah.png'); background-size: cover; background-position: center;">Казахстан</a>
+        <a href="https://274418.selcdn.ru/cv08300-33250f0d-0664-43fc-9dbf-9d89738d114e/uploads/69346/3fc468ec-6e40-45b1-8292-acd142297b28.pdf" target="_blank" style="background-image: url('img/kirgiz.png'); background-size: cover; background-position: center;">Кыргызтан</a>
+        <a href="https://www.consultant.ru/document/cons_doc_LAW_461371/" target="_blank" style="background-image: url('img/russia.jpg'); background-size: cover; background-position: center;">Россия</a>
+        <!-- <button>Армения</button>
+        <button>Беларусь</button>
+        <button>Казахстан</button>
+        <button>Кыргыстан</button>
+        <button>Россия</button> -->
+        <!--<a href="src/15.6.html" target="_blank">15.6</a>
         <a href="src/15.7.html" target="_blank">15.7</a>
         <a href="src/15.8.html" target="_blank">15.8</a>
         <a href="src/15.9.html" target="_blank">15.9</a>
         <a href="src/15.10.html" target="_blank">15.10</a>
         <a href="src/15.11.html" target="_blank">15.11</a>
         <a href="src/15.12.html" target="_blank">15.12</a>
-        <a href="src/15.13.html" target="_blank">15.13</a>
+        <a href="src/15.13.html" target="_blank">15.13</a>-->
     </div>
 
-    <main>
-        <section id="penalties">
-            <h2>Наказания</h2>
-            <p>Основными наказаниями являются наложение штрафа, конфискация.</p>
-        </section>
-        <section id="photos">
+    <main style="justify-content: center;">
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <div class="buttons">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('*')">*</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="appendToDisplay('+')">+</button>
+            </div>
+        </div>
+        <!--<section id="photos">
             <h2>Библиотека</h2>
             <div class="gallery">
                 <a href="https://pravo.by/document/?guid=3871&p0=hk9800218" target="_blank"><img src="img/gkrb.png" alt="Фотография 1"></a>
                 <a href="https://pravo.by/document/?guid=3871&p0=hk9900275" target="_blank"><img src="img/ukrb.png" alt="Фотография 2"></a>
                 <a href="https://pravo.by/document/?guid=12551&p0=HK2100091&p1=1" target="_blank"><img src="img/koap.png" alt="Фотография 3"></a>
             </div>
+        </section>-->
+    </main>
+
+    <main>
+        
+        <section id="about">
+            <a href="src/file.pdf" target="_blank" class="shine-button"><h2>Сравнение ставок стран-участниц ЕАЭС</h2></a>
+        </section>
+        <section id="about">
+            <a href="https://www.consultant.ru/document/cons_doc_LAW_215315/" target="_blank"><img src="img/tam.webp" style=" width: 25%;"></a>
         </section>
     </main>
+
     <footer>
-        <p>© 2023 Административные правонарушения</p>
+        <p>© 2024 Налоговое законодательство стран ЕАЭС</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
